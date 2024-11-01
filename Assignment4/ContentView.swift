@@ -14,12 +14,6 @@ struct ContentView: View {
         //VStack to hold contents of the Assignment
         VStack()
         {
-            //Title of the App
-            Text("Presidents")
-                .font(.title)
-                .bold()
-                .multilineTextAlignment(.center)
-            
             //call PresidentListView
             PresidentListView()
         }//end of VStack

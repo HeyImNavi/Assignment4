@@ -14,11 +14,15 @@ struct PresidentListView: View {
         
         let items = ["Item 1", "Item 2", "Item 3"]
 
-        //list to display Presidents
-        List(items, id: \.self) { item in
-            Text(item)
-        }//end of list
-            .listStyle(.grouped)
+        NavigationStack {
+            //list for Presidents
+            List(items, id: \.self) { item in
+                Text(item)
+            }//end of list
+                .listStyle(.plain)
+                .navigationTitle("Presidents")
+                .navigationBarTitleDisplayMode(.inline)
+        }//end of NavigationStack
         
     }//end of some View
 }//end of struct View
