@@ -12,6 +12,7 @@
 		E5B1FF902CD55E8A002BC03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B1FF8F2CD55E8A002BC03C /* Assets.xcassets */; };
 		E5B1FF932CD55E8A002BC03C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B1FF922CD55E8A002BC03C /* Preview Assets.xcassets */; };
 		E5B1FF9A2CD562E0002BC03C /* presidents.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5B1FF992CD562E0002BC03C /* presidents.plist */; };
+		E5B1FF9C2CD5634E002BC03C /* PresidentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B1FF9B2CD5634E002BC03C /* PresidentListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E5B1FF8F2CD55E8A002BC03C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5B1FF922CD55E8A002BC03C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5B1FF992CD562E0002BC03C /* presidents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = presidents.plist; sourceTree = "<group>"; };
+		E5B1FF9B2CD5634E002BC03C /* PresidentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				E5B1FF8B2CD55E87002BC03C /* Assignment4App.swift */,
 				E5B1FF8D2CD55E87002BC03C /* ContentView.swift */,
+				E5B1FF9B2CD5634E002BC03C /* PresidentListView.swift */,
 				E5B1FF992CD562E0002BC03C /* presidents.plist */,
 				E5B1FF8F2CD55E8A002BC03C /* Assets.xcassets */,
 				E5B1FF912CD55E8A002BC03C /* Preview Content */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B1FF9C2CD5634E002BC03C /* PresidentListView.swift in Sources */,
 				E5B1FF8E2CD55E87002BC03C /* ContentView.swift in Sources */,
 				E5B1FF8C2CD55E87002BC03C /* Assignment4App.swift in Sources */,
 			);
