@@ -13,6 +13,8 @@
 		E5B1FF932CD55E8A002BC03C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B1FF922CD55E8A002BC03C /* Preview Assets.xcassets */; };
 		E5B1FF9A2CD562E0002BC03C /* presidents.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5B1FF992CD562E0002BC03C /* presidents.plist */; };
 		E5B1FF9C2CD5634E002BC03C /* PresidentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B1FF9B2CD5634E002BC03C /* PresidentListView.swift */; };
+		E5B1FF9F2CD56970002BC03C /* flag-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B1FF9D2CD56970002BC03C /* flag-1024.png */; };
+		E5B1FFA02CD56970002BC03C /* seal.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B1FF9E2CD56970002BC03C /* seal.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		E5B1FF922CD55E8A002BC03C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5B1FF992CD562E0002BC03C /* presidents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = presidents.plist; sourceTree = "<group>"; };
 		E5B1FF9B2CD5634E002BC03C /* PresidentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentListView.swift; sourceTree = "<group>"; };
+		E5B1FF9D2CD56970002BC03C /* flag-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-1024.png"; sourceTree = "<group>"; };
+		E5B1FF9E2CD56970002BC03C /* seal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seal.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +59,11 @@
 		E5B1FF8A2CD55E87002BC03C /* Assignment4 */ = {
 			isa = PBXGroup;
 			children = (
+				E5B1FFA12CD56984002BC03C /* Images */,
+				E5B1FF992CD562E0002BC03C /* presidents.plist */,
 				E5B1FF8B2CD55E87002BC03C /* Assignment4App.swift */,
 				E5B1FF8D2CD55E87002BC03C /* ContentView.swift */,
 				E5B1FF9B2CD5634E002BC03C /* PresidentListView.swift */,
-				E5B1FF992CD562E0002BC03C /* presidents.plist */,
 				E5B1FF8F2CD55E8A002BC03C /* Assets.xcassets */,
 				E5B1FF912CD55E8A002BC03C /* Preview Content */,
 			);
@@ -71,6 +76,15 @@
 				E5B1FF922CD55E8A002BC03C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5B1FFA12CD56984002BC03C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E5B1FF9D2CD56970002BC03C /* flag-1024.png */,
+				E5B1FF9E2CD56970002BC03C /* seal.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5B1FF932CD55E8A002BC03C /* Preview Assets.xcassets in Resources */,
+				E5B1FFA02CD56970002BC03C /* seal.png in Resources */,
 				E5B1FF9A2CD562E0002BC03C /* presidents.plist in Resources */,
+				E5B1FF9F2CD56970002BC03C /* flag-1024.png in Resources */,
 				E5B1FF902CD55E8A002BC03C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
