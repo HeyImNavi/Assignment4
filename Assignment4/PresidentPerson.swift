@@ -11,12 +11,13 @@ import Foundation
 
 struct PresidentPerson: Decodable {
     var name = ""
-    var number = ""
+    var number = 0
     var startDate = ""
     var endDate = ""
     var nickname = ""
     var party = ""
     
+    /* Not sure if this is entirely necessary
     private enum CodingKeys: String, CodingKey {
         case name = "Name"
         case number = "Number"
@@ -25,5 +26,6 @@ struct PresidentPerson: Decodable {
         case nickname = "Nickname"
         case party = "Party"
     }
+    */
 }
 
