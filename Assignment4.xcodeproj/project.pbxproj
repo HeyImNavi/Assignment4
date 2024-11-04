@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5A41F702CD967BD00F11B2C /* PresidentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A41F6F2CD967BD00F11B2C /* PresidentModel.swift */; };
 		E5B1FF8C2CD55E87002BC03C /* Assignment4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B1FF8B2CD55E87002BC03C /* Assignment4App.swift */; };
 		E5B1FF8E2CD55E87002BC03C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B1FF8D2CD55E87002BC03C /* ContentView.swift */; };
 		E5B1FF902CD55E8A002BC03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B1FF8F2CD55E8A002BC03C /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5A41F6F2CD967BD00F11B2C /* PresidentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentModel.swift; sourceTree = "<group>"; };
 		E5B1FF882CD55E87002BC03C /* Assignment4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B1FF8B2CD55E87002BC03C /* Assignment4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment4App.swift; sourceTree = "<group>"; };
 		E5B1FF8D2CD55E87002BC03C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				E5B1FF8B2CD55E87002BC03C /* Assignment4App.swift */,
 				E5B1FF8D2CD55E87002BC03C /* ContentView.swift */,
 				E5B1FF9B2CD5634E002BC03C /* PresidentListView.swift */,
+				E5A41F6F2CD967BD00F11B2C /* PresidentModel.swift */,
 				E5B1FF8F2CD55E8A002BC03C /* Assets.xcassets */,
 				E5B1FF912CD55E8A002BC03C /* Preview Content */,
 			);
@@ -162,6 +165,7 @@
 			files = (
 				E5B1FF9C2CD5634E002BC03C /* PresidentListView.swift in Sources */,
 				E5B1FF8E2CD55E87002BC03C /* ContentView.swift in Sources */,
+				E5A41F702CD967BD00F11B2C /* PresidentModel.swift in Sources */,
 				E5B1FF8C2CD55E87002BC03C /* Assignment4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,6 @@ import SwiftUI
 
 struct PresidentListView: View {
     var body: some View {
-        
         let items = ["Item 1", "Item 2", "Item 3"]
 
         NavigationStack {
@@ -21,9 +20,8 @@ struct PresidentListView: View {
             }//end of list
                 .listStyle(.plain)
                 .navigationTitle("Presidents")
-                .navigationBarTitleDisplayMode(.inline)
+	                .navigationBarTitleDisplayMode(.inline)
         }//end of NavigationStack
-        
     }//end of some View
 }//end of struct View
 
