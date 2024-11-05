@@ -24,13 +24,24 @@ struct PresidentListView: View {
         NavigationStack {
             //list for Presidents
             List {
-                ForEach(presidentModel.presidentArray, id: \.number) { index in
-                    //Text(presidentModel.presidentArray[index].name).tag(index)
+                ForEach(presidentModel.presidentArray, id: \.number) { president in
+                    VStack {
+                        Text(president.name)
+                            .font(.headline)
+                            .bold()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        Text(president.party)
+                            .font(.caption)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
                 }//end of ForEach
             }//end of list
-                .listStyle(.plain)
+            .listStyle(.plain)
                 .navigationTitle("Presidents")
-	                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarTitleDisplayMode(.inline)
+                .onAppear {
+                    presidentModel.loadPropertyListData()
+                }
         }//end of NavigationStack
     }//end of some View
 }//end of struct View
