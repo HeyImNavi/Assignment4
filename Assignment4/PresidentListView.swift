@@ -10,13 +10,23 @@
 import SwiftUI
 
 struct PresidentListView: View {
+    
+    //set viewModel to PresidentViewModel
+    @State private var presidentModel = PresidentViewModel()
+    
+    //variables
+    @State private var presidentIndex = 0
+    @State private var partyIndex = 0
+    
     var body: some View {
-        let items = ["Item 1", "Item 2", "Item 3"]
+        //let items = ["Item 1", "Item 2", "Item 3"]
 
         NavigationStack {
             //list for Presidents
-            List(items, id: \.self) { item in
-                Text(item)
+            List {
+                ForEach(presidentModel.presidentArray, id: \.number) { index in
+                    //Text(presidentModel.presidentArray[index].name).tag(index)
+                }//end of ForEach
             }//end of list
                 .listStyle(.plain)
                 .navigationTitle("Presidents")
