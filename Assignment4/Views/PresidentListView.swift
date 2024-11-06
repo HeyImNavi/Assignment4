@@ -12,19 +12,22 @@ import SwiftUI
 struct PresidentListView: View {
     
     //set viewModel to PresidentViewModel
-    @State private var presidentModel = PresidentViewModel()
+    @State private var presidentModel = PresidentListViewModel()
     
     //variables
     @State private var presidentIndex = 0
     @State private var partyIndex = 0
     
     var body: some View {
-        //let items = ["Item 1", "Item 2", "Item 3"]
 
         NavigationStack {
             //list for Presidents
             List {
-                ForEach(presidentModel.presidentArray, id: \.number) { president in
+                ForEach($presidentModel.presidents, id: \.number) { presidentVM in
+                    NavigationLink(destination: PresidentDetailView(president: presidentVM)) {
+                        PresidentRow(president: presidentVM)
+                    }//end of NavigationLink
+                    /*
                     VStack {
                         Text(president.name)
                             .font(.headline)
@@ -33,15 +36,16 @@ struct PresidentListView: View {
                         Text(president.party)
                             .font(.caption)
                             .frame(maxWidth: .infinity, alignment: .leading)
-                    }
+                    }//end of VStack
+                    */
                 }//end of ForEach
             }//end of list
             .listStyle(.plain)
                 .navigationTitle("Presidents")
                 .navigationBarTitleDisplayMode(.inline)
-                .onAppear {
-                    presidentModel.loadPropertyListData()
-                }
+                /*.onAppear {
+                    presidents.loadPropertyListData()
+                }*/
         }//end of NavigationStack
     }//end of some View
 }//end of struct View

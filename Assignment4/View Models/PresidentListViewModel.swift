@@ -1,5 +1,5 @@
 //
-//  PresidentViewModel.swift
+//  PresidentListViewModel.swift
 //  Assignment4
 //
 //  Created by Aaron Arreola and Calvin Darley
@@ -7,22 +7,27 @@
 //
 
 import Foundation
-import Observation
 
 @Observable
-class PresidentViewModel {
-    
+class PresidentListViewModel {
     //Declaring an array to hold values for presidents
-    var presidentArray: [PresidentPerson] = []
+    var presidents: [PresidentViewModel] = []
     
-    //Variables inside the presidentArray
-    var name: String = ""
-    var number: Int = 0
-    var startDate: String = ""
-    var endDate: String = ""
-    var nickname: String = ""
-    var party: String = ""
-    
+    func getPresidents() async {
+        
+        do {
+            var presidents = try await WebService().fetchCharacters(url: Constants.Urls.charactersURL)
+            presidents.sort {
+                $0.name < $1.name
+            }
+            
+            self.presidents = presidents.map(PresidentViewModel.init)
+        } catch {
+            print(error)
+        }
+    }
+
+/*
     //load contents of plist into presidentArray
     func loadPropertyListData() {
         
@@ -31,7 +36,7 @@ class PresidentViewModel {
         }
         
         do {
-            presidentArray = try PropertyListDecoder().decode([PresidentPerson].self, from: xml)
+            presidentArray = try PropertyListDecoder().decode([PresidentStruct].self, from: xml)
             
             if let firstPresident = presidentArray.first {
                 name = firstPresident.name
@@ -52,5 +57,5 @@ class PresidentViewModel {
         } catch {
             fatalError("Unable to decode property list presidents.plist")
         }
-    }
+*/
 }
