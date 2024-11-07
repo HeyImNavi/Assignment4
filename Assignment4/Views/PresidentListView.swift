@@ -15,8 +15,8 @@ struct PresidentListView: View {
     @State private var presidentModel = PresidentListViewModel()
     
     //variables
-    @State private var presidentIndex = 0
-    @State private var partyIndex = 0
+    //@State private var presidentIndex = 0
+    //@State private var partyIndex = 0
     
     var body: some View {
 
@@ -40,9 +40,12 @@ struct PresidentListView: View {
                     */
                 }//end of ForEach
             }//end of list
-            .listStyle(.plain)
+                .listStyle(.plain)
                 .navigationTitle("Presidents")
                 .navigationBarTitleDisplayMode(.inline)
+                .task(priority: .high) {
+                    await presidentModel.getPresidents()
+                }
                 /*.onAppear {
                     presidents.loadPropertyListData()
                 }*/

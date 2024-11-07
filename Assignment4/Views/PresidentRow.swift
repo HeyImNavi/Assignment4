@@ -26,3 +26,7 @@ struct PresidentRow: View {
         }//end of HStack
     }//end of some View
 }//end of struct View
+
+#Preview {
+    PresidentRow(president: PresidentViewModel.default)
+}

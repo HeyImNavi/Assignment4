@@ -22,3 +22,7 @@ struct PresidentDetailView: View {
         }//end of VStack
     }//end of some View
 }//end of Struct view
+
+#Preview {
+    PresidentDetailView(president: PresidentViewModel.default)
+}
