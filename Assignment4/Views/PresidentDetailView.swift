@@ -35,7 +35,7 @@ struct PresidentDetailView: View {
             //Nickname of the President
             Text("Nickname")
                 .bold()
-            Text("\(president.nickname)")
+            Text("\"\(president.nickname)\"")
             
             //Political Party of the President
             Text("Political Party")
