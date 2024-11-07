@@ -12,6 +12,13 @@ struct PresidentDetailView: View {
     
     var president: PresidentViewModel
     
+    //Number formatter - Taken from Text Example
+    var formatter: NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .ordinal
+        return formatter
+    }
+    
     var body: some View {
         
         VStack(spacing: 16) {
@@ -23,7 +30,7 @@ struct PresidentDetailView: View {
                 .multilineTextAlignment(.center)
             
             //What number the President is
-            Text("\(president.number) President of the United States") //need to implement number formatter
+            Text("\(NSNumber(value: 1), formatter: formatter) President of the United States") //need to implement number formatter
                 .bold()
             
             //Start and End Date of the President
