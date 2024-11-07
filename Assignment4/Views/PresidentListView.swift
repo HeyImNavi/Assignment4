@@ -27,17 +27,6 @@ struct PresidentListView: View {
                     NavigationLink(destination: PresidentDetailView(president: presidentVM)) {
                         PresidentRow(president: presidentVM)
                     }//end of NavigationLink
-                    /*
-                    VStack {
-                        Text(president.name)
-                            .font(.headline)
-                            .bold()
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        Text(president.party)
-                            .font(.caption)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                    }//end of VStack
-                    */
                 }//end of ForEach
             }//end of list
                 .listStyle(.plain)
@@ -46,9 +35,6 @@ struct PresidentListView: View {
                 .task(priority: .high) {
                     await presidentModel.getPresidents()
                 }
-                /*.onAppear {
-                    presidents.loadPropertyListData()
-                }*/
         }//end of NavigationStack
     }//end of some View
 }//end of struct View

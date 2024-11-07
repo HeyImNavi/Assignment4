@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct PresidentViewModel {
+struct PresidentViewModel: Decodable {
     
     var president: PresidentPerson
-    
+
     //Variables inside the presidentArray
     var name: String {
         president.name
@@ -40,7 +40,7 @@ struct PresidentViewModel {
     {
         president.party
     }
-    
+
     static var `default`: PresidentViewModel {
         let president = PresidentPerson(name: "George Washington", number: 1, startDate: "April 30, 1789", endDate: "March 3, 1797", nickname: "Father of His Country" , party: "None")
         return PresidentViewModel(president: president)
