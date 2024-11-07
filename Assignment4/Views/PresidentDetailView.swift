@@ -30,7 +30,7 @@ struct PresidentDetailView: View {
                 .multilineTextAlignment(.center)
             
             //What number the President is
-            Text("\(NSNumber(value: 1), formatter: formatter) President of the United States") //need to implement number formatter
+            Text("\(NSNumber(value: president.number), formatter: formatter) President of the United States") //need to implement number formatter
                 .bold()
             
             //Start and End Date of the President
