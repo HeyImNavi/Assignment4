@@ -18,7 +18,7 @@ class PresidentListViewModel {
         do {
             var presidents = try await WebService().fetchCharacters(url: Constants.Urls.charactersURL)
             presidents.sort {
-                $0.name < $1.name
+                $0.number < $1.number
             }
             
             self.presidents = presidents.map(PresidentViewModel.init)

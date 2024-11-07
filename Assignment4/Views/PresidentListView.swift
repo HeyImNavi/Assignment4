@@ -23,7 +23,7 @@ struct PresidentListView: View {
         NavigationStack {
             //list for Presidents
             List {
-                ForEach($presidentModel.presidents, id: \.number) { presidentVM in
+                ForEach(presidentModel.presidents, id: \.number) { presidentVM in
                     NavigationLink(destination: PresidentDetailView(president: presidentVM)) {
                         PresidentRow(president: presidentVM)
                     }//end of NavigationLink
