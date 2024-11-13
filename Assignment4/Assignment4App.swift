@@ -2,7 +2,8 @@
 //  Assignment4App.swift
 //  Assignment4
 //
-//  Created by Maggie Thomas on 11/1/24.
+//  Created by Aaron Arreola and Calvin Darley
+//  Due 11/12/2024
 //
 
 import SwiftUI

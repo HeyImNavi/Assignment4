@@ -1,6 +1,6 @@
 //
 //  PresidentListViewModel.swift
-//  Assignment4
+//  Assignment5
 //
 //  Created by Aaron Arreola and Calvin Darley
 //  Due 11/12/2024
@@ -17,17 +17,13 @@ class PresidentListViewModel {
     
     func getPresidents() async {
         
-        guard let path = Bundle.main.path(forResource: "presidents", ofType: "plist"), let xml = FileManager.default.contents(atPath: path) else {
-            fatalError("Unable to access property list presidents.plist")
-        }
         do {
-            var presidents = try PropertyListDecoder().decode([PresidentPerson].self, from: xml)
-            presidents.sort {
-                $0.number < $1.number
+            var characters = try await WebService().fetchPresidents(url: Constants.Urls.charactersURL)
+            characters.sort {
+                $0.name < $1.name
             }
-            self.presidents = presidents.map(PresidentViewModel.init)
         } catch {
-            fatalError("\(error): Unable to decode property list presidents.plist")
+            print(error)
         }
     }//end of getPresidents()
 }//end of class

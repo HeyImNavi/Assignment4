@@ -12,6 +12,8 @@
 		E5A41F762CDC122100F11B2C /* PresidentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A41F752CDC122100F11B2C /* PresidentRow.swift */; };
 		E5A41F782CDC139000F11B2C /* PresidentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A41F772CDC139000F11B2C /* PresidentDetailView.swift */; };
 		E5A41F7A2CDC2EB000F11B2C /* PresidentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A41F792CDC2EB000F11B2C /* PresidentListViewModel.swift */; };
+		E5A41F872CE56E9E00F11B2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A41F862CE56E9E00F11B2C /* Constants.swift */; };
+		E5A41F892CE56F1600F11B2C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A41F882CE56F1600F11B2C /* WebService.swift */; };
 		E5B1FF8C2CD55E87002BC03C /* Assignment4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B1FF8B2CD55E87002BC03C /* Assignment4App.swift */; };
 		E5B1FF8E2CD55E87002BC03C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B1FF8D2CD55E87002BC03C /* ContentView.swift */; };
 		E5B1FF902CD55E8A002BC03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B1FF8F2CD55E8A002BC03C /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 		E5A41F752CDC122100F11B2C /* PresidentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentRow.swift; sourceTree = "<group>"; };
 		E5A41F772CDC139000F11B2C /* PresidentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentDetailView.swift; sourceTree = "<group>"; };
 		E5A41F792CDC2EB000F11B2C /* PresidentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentListViewModel.swift; sourceTree = "<group>"; };
+		E5A41F862CE56E9E00F11B2C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E5A41F882CE56F1600F11B2C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		E5B1FF882CD55E87002BC03C /* Assignment4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B1FF8B2CD55E87002BC03C /* Assignment4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment4App.swift; sourceTree = "<group>"; };
 		E5B1FF8D2CD55E87002BC03C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				E5B1FFA12CD56984002BC03C /* Images */,
 				E5B1FF992CD562E0002BC03C /* presidents.plist */,
 				E5B1FF8B2CD55E87002BC03C /* Assignment4App.swift */,
+				E5A41F862CE56E9E00F11B2C /* Constants.swift */,
+				E5A41F882CE56F1600F11B2C /* WebService.swift */,
 				E5A41F852CDC333900F11B2C /* Views */,
 				E5A41F832CDC331600F11B2C /* View Models */,
 				E5A41F842CDC332000F11B2C /* Models */,
@@ -207,6 +213,8 @@
 				E5A41F7A2CDC2EB000F11B2C /* PresidentListViewModel.swift in Sources */,
 				E5A41F782CDC139000F11B2C /* PresidentDetailView.swift in Sources */,
 				E5A41F762CDC122100F11B2C /* PresidentRow.swift in Sources */,
+				E5A41F892CE56F1600F11B2C /* WebService.swift in Sources */,
+				E5A41F872CE56E9E00F11B2C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
