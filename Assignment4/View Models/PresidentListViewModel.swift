@@ -18,10 +18,12 @@ class PresidentListViewModel {
     func getPresidents() async {
         
         do {
-            var characters = try await WebService().fetchPresidents(url: Constants.Urls.charactersURL)
-            characters.sort {
-                $0.name < $1.name
+            var presidents = try await WebService().fetchPresidents(url: Constants.Urls.charactersURL)
+            presidents.sort {
+                $0.number < $1.number
             }
+            
+            self.presidents = presidents.map(PresidentViewModel.init)
         } catch {
             print(error)
         }

@@ -16,7 +16,7 @@ struct PresidentPerson: Decodable {
     var endDate: String
     var nickname: String
     var party: String
-
+    var url: String
     
     private enum CodingKeys: String, CodingKey {
         case name = "Name"
@@ -25,6 +25,7 @@ struct PresidentPerson: Decodable {
         case endDate = "End Date"
         case nickname = "Nickname"
         case party = "Political Party"
+        case url = "URL"
     }
 }
 

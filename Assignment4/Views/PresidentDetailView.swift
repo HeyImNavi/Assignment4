@@ -36,8 +36,13 @@ struct PresidentDetailView: View {
             //Start and End Date of the President
             Text("(\(president.startDate) to \(president.endDate))")
             
-            //Presidential Seal Image
-            Image(.seal)
+            //Presidential Images
+            AsyncImage(url: URL(string: president.url), content: { image in
+                image.resizable().scaledToFit().clipShape(RoundedRectangle(cornerSize: CGSize(width: 16, height: 16)))
+            }, placeholder: {
+                ProgressView()
+            })
+            .padding(.horizontal)
             
             //Nickname of the President
             Text("Nickname")
