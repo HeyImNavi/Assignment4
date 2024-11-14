@@ -14,6 +14,12 @@ struct PresidentRow: View {
     
     var body: some View {
         HStack {
+            AsyncImage(url: URL(string: president.url), content: { image in
+                image.resizable().clipShape(RoundedRectangle(cornerSize: CGSize(width: 6, height: 6.5)))
+            }, placeholder: {
+                ProgressView()
+            })
+            .frame(width: 50, height: 50)
             VStack(alignment: .leading) {
                 Text(president.name)
                     .font(.headline)
