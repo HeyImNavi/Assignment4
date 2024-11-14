@@ -1,10 +1,10 @@
 //
 //  PresidentListView.swift
-//  Assignment4
+//  Assignment5
 //
 //
 //  Created by Aaron Arreola and Calvin Darley
-//  Due 11/12/2024
+//  Due 11/19/2024
 //
 
 import SwiftUI
@@ -13,10 +13,6 @@ struct PresidentListView: View {
     
     //set viewModel to PresidentViewModel
     @State private var presidentModel = PresidentListViewModel()
-    
-    //variables
-    //@State private var presidentIndex = 0
-    //@State private var partyIndex = 0
     
     var body: some View {
 

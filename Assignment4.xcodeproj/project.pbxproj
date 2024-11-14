@@ -57,8 +57,8 @@
 		E5A41F832CDC331600F11B2C /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				E5A41F792CDC2EB000F11B2C /* PresidentListViewModel.swift */,
 				E5A41F732CD969FA00F11B2C /* PresidentViewModel.swift */,
+				E5A41F792CDC2EB000F11B2C /* PresidentListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";

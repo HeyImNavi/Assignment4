@@ -1,9 +1,9 @@
 //
 //  PresidentDetailView.swift
-//  Assignment4
+//  Assignment5
 //
 //  Created by Aaron Arreola and Calvin Darley
-//  Due 11/12/2024
+//  Due 11/19/2024
 //
 
 import SwiftUI
